@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="regist-login-style.css">
+    <title>Register Page</title>
+</head>
+<body>
+    <script src="storingdata.js"></script>
+    <script src="register-pages.js"></script>
+
+    <form id="regist-form">
+        <div class="page-masuk" id="register-page">
+            <div class="register-page">
+                <input id="email-regis" type="text" placeholder="Email" required>
+                <input id="pass-regis" type="password" placeholder="Password" required>
+                <input id="validation-regis" type="checkbox" name="checkbox" value="check">
+                <input type="submit" name="email_submit" value="submit"/>
+                <p>Already have an account? <a href="#" id="to-login">Login here</a></p>
+            </div>
+        </div>
+        
+        <div class="page-masuk" id="login-page" style="display: none;">
+            <div class="login-page">
+                <input id="email-login" type="text" placeholder="Email">
+                <input id="pass-login" type="password" placeholder="Password">
+                <input type="submit" name="login_submit" value="Login"/>
+                <p>Don't have an account? <a href="#" id="to-register">Register here</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
